@@ -54,6 +54,16 @@ function App() {
             ease: 'power3.out',
           },
           '-=0.5'
+        )
+        .from(
+          'footer',
+          {
+            y: -20,
+            opacity: 0,
+            duration: 1,
+            ease: 'power3.out',
+          },
+          '-=1'
         );
     },
     { dependencies: [active] }
@@ -108,6 +118,18 @@ function App() {
         <Preload all />
       </Canvas>
       <Loader />
+
+      <footer className="absolute bottom-5 left-1/2 -translate-x-1/2 text-white z-2">
+        Created by{' '}
+        <a
+          className="font-[600] underline"
+          href="https://www.linkedin.com/in/arturom0427/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Arturo Muñoz
+        </a>
+      </footer>
     </div>
   );
 }
