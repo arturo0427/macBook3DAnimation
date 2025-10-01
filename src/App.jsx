@@ -111,7 +111,7 @@ function App() {
       <Canvas
         camera={{ fov: 12, near: 0.1, far: 1000, position: [0, -10, 250] }}
       >
-        <Environment files={'/studio_small_09_1k.hdr'} />
+        <Environment files={'studio_small_09_1k.hdr'} />
         <ScrollControls pages={3} damping={0.1}>
           <MacContainer />
         </ScrollControls>
